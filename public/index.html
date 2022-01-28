@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="fontawesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>NFT</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="./img/bgvideo.mov" type="video/mp4" />
+    </video>
+    <header class="text-center pt-10 text-5xl font-bold">
+      <nav class="flex justify-between px-2 md:text-5xl text-2xl">
+        <h1 class="heading leading-relaxed text-yellow-400">Welcome to</h1>
+        <h1 class="heading leading-relaxed text-yellow-400">Dungeon Demon</h1>
+      </nav>
+    </header>
+    <section class="text-gray-600 body-font relative">
+      <div
+        class="
+          container
+          mx-auto
+          flex flex-col
+          lg:flex-row
+          px-5
+          pt-16
+          justify-center
+          items-center
+        "
+      >
+        <img
+          class="
+            lg:w-2/6
+            md:w-3/6
+            w-5/6
+            mb-10
+            object-cover object-center
+            rounded-md
+            border-yellow-300 border-4
+            js-fun
+            animate__animated animate__pulse animate__infinite
+          "
+          alt="hero"
+          src="./img/i1.png"
+        />
+
+        <div
+          class="
+            w-full
+            md:w-2/3
+            flex flex-col
+            mb-16
+            items-center
+            text-center text-white
+          "
+          id="font"
+        >
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">
+            Minut Price: <span id="font-p">33</span>
+          </h1>
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">
+            Amount Minted: <span id="font-p">33</span>
+          </h1>
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">
+            Amount Left: <span id="font-p">33</span>
+          </h1>
+          <div class="relative flex-grow w-full mt-4">
+            <label for="email" class="leading-7 text-sm text-white"
+              >Amount to Mint</label
+            >
+            <input
+              type="email"
+              id="font-p"
+              name="email"
+              class="
+                w-48
+                bg-gray-900 bg-opacity-50
+                rounded
+                border border-gray-300
+                focus:border-yellow-500
+                focus:bg-transparent
+                focus:ring-2
+                focus:ring-yellow-200
+                text-base
+                outline-none
+                py-1
+                px-3
+                leading-8
+                transition-colors
+                duration-200
+                ease-in-out
+              "
+            />
+
+            <div class="flex w-full justify-center items-end pt-5 button-open">
+              <button
+                class="
+                  inline-flex
+                  text-white
+                  bg-red-800
+                  border-0
+                  py-4
+                  px-16
+                  focus:outline-none
+                  hover:bg-red-600 hover:text-yellow-400
+                  rounded
+                  text-lg
+                  hover:border-yellow-300 hover:border-2
+                  button-open
+                "
+              >
+                Connect Wallet and Mint
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="container-scroll flex-scroll">
+        <div class="item flex-item">
+          <img src="./img/i1.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i2.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i3.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i4.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i5.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i6.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i7.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i8.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i9.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i10.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i11.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i12.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i13.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i14.png" class="img-scroll hover-effect" />
+        </div>
+        <div class="item flex-item">
+          <img src="./img/i15.png" class="img-scroll hover-effect" />
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <!-- Modal 1 -->
+    <div
+      class="
+        fixed
+        hidden
+        inset-0
+        bg-black bg-opacity-80
+        overflow-y-auto
+        h-full
+        w-full
+        overlay-modal
+      "
+    ></div>
+    <div
+      class="
+        modal1
+        p-24
+        flex flex-col
+        items-center
+        bg-gray-50
+        rounded-md
+        absolute
+        top-1/2
+        left-1/2
+        transform
+        -translate-x-1/2 -translate-y-1/2
+        z-50
+        hidden
+      "
+    >
+      <div class="modal-img">
+        <img src="./img/4380-processing.gif" class="rounded filter w-52" />
+      </div>
+      <div class="modal-text text-center">
+        <div>
+          <h2 class="text-lg font-semibold mt-2">Hello Hi</h2>
+        </div>
+        <div class="modal-btn text-center">
+          <button
+            class="lg:px-6 lg:py-4 px-11 bg-red-600 mt-4 rounded text-white"
+          >
+            New Opens
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 1 -->
+    <!-- Modal 2 -->
+
+    <div
+      class="
+        modal2
+        p-24
+        flex flex-col
+        items-center
+        rounded-md
+        bg-gray-50
+        absolute
+        top-1/2
+        left-1/2
+        transform
+        -translate-x-1/2 -translate-y-1/2
+        z-50
+        hidden
+      "
+    >
+      <div class="modal-img">
+        <img
+          src="./img/i1.png"
+          class="rounded filter w-52 rounded-md drop-shadow-2xl"
+        />
+      </div>
+      <div class="modal-text text-center">
+        <div>
+          <h2 class="text-lg font-semibold mt-2">Hello Hi</h2>
+        </div>
+        <div class="modal-btn-close text-center">
+          <button
+            class="lg:px-6 lg:py-4 px-11 bg-red-600 mt-4 rounded text-white"
+          >
+            New Opens
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+    <div class="fire-bg">
+      <script src="lottie.js"></script>
+      <lottie-player
+        src="lottie.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+  </body>
+</html>
